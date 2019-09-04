@@ -1,0 +1,11 @@
+{
+  "packageDirectories": [
+    {
+      "path": "force-app",
+      "default": true
+    }
+  ],
+  "namespace": "",
+  "sfdcLoginUrl": "https://cunning-wolf-1bw3fr-dev-ed.lightning.force.com/",
+  "sourceApiVersion": "45.0"
+}
