@@ -4,11 +4,12 @@
         if (createRecordEvent) {
             component.set("v.showNewBtn", true);
         }
+
+        helper.loadBoatTypes(component, event, helper);
     },
 
     boatTypeChange : function(component, event, helper) {
         var boatType = event.getSource().get("v.value");
-        console.log(boatType);
         component.set("v.boatType", boatType);
     },
 
