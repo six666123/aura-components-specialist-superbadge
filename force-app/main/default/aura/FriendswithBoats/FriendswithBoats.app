@@ -1,4 +1,4 @@
-<aura:component implements="flexipage:availableForAllPageTypes" access="global">
+<aura:application extends="force:slds">
   <div>
     <lightning:card title="Find a Boat" class="slds-m-bottom_medium">
       <c:BoatSearchForm />
@@ -7,4 +7,4 @@
       <c:BoatSearchResults />
     </lightning:card>
   </div>
-</aura:component>	
+</aura:application>
