@@ -13,7 +13,12 @@
         component.set("v.boatType", boatType);
     },
 
-    searchBtnClick : function(component, event, helper) {
+    onFormSubmit : function(component, event, helper) {
+        var params = {"formData": {"boatTypeId": component.get("v.boatType")}};
+
+        var formsubmit = component.getEvent("formsubmit");
+        formsubmit.setParams(params);
+        formsubmit.fire();
     },
 
     newBtnClick : function(component, event, helper) {
@@ -26,8 +31,6 @@
             if (boatType) {
                 params.defaultFieldValues = {"BoatType__c" : boatType};
             }
-
-            console.log(params);
 
             createRecordEvent.setParams(params);
             createRecordEvent.fire();
