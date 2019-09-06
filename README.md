@@ -1,9 +1,3 @@
-# SFDX App
+# Salesforce Aura Components Specialist Superbadge
 
-## Dev, Build and Test
-
-## Resources
-
-## Description of Files and Directories
-
-## Issues
+Aura code to complete the Aura Components Specialist Superbadge
