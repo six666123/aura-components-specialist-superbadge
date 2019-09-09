@@ -7,5 +7,9 @@
         component.set("v.id", boat.Id);
 
         component.find("service").reloadRecord();
+    },
+
+    onBoatReviewAdded : function(component, event, helper) {
+        component.find("tabs").set('v.selectedTabId', 'boatreviewtab');
     }
 })
