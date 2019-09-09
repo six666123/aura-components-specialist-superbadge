@@ -9,6 +9,7 @@
       </lightning:card>
     </lightning:layoutItem>
     <lightning:layoutItem size="12" mediumDeviceSize="4" padding="around-small">
+      <c:BoatDetails />
     </lightning:layoutItem>
   </lightning:layout>
 </aura:application>
