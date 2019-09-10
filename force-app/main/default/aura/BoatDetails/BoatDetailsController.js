@@ -1,5 +1,9 @@
 ({
     onRecordUpdated : function(component, event, helper) {
+        var reviews = component.find("reviews");
+        if (reviews) {
+            reviews.refresh();
+        }
     },
 
     onBoatSelected : function(component, event, helper) {
@@ -10,6 +14,11 @@
     },
 
     onBoatReviewAdded : function(component, event, helper) {
+        var reviews = component.find("reviews");
+        if (reviews) {
+            reviews.refresh();
+        }
+
         component.find("tabs").set('v.selectedTabId', 'boatreviewtab');
     }
 })
