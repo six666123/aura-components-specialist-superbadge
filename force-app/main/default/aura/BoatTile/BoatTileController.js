@@ -9,6 +9,15 @@
             var boatselected = $A.get("e.c:boatselected");
             boatselected.setParams({"boat": boat});
             boatselected.fire();
+
+            var plotMapMarker = $A.get("e.c:plotMapMarker");
+            plotMapMarker.setParams({
+                "sObjectId": boat.Id,
+                "lat": boat.Geolocation__c.latitude,
+                "long": boat.Geolocation__c.longitude,
+                "label": boat.Name
+            });
+            plotMapMarker.fire();
         }
     }
 })

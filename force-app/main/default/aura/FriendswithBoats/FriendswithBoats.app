@@ -10,6 +10,7 @@
     </lightning:layoutItem>
     <lightning:layoutItem size="12" mediumDeviceSize="4" padding="around-small">
       <c:BoatDetails />
+      <c:Map />
     </lightning:layoutItem>
   </lightning:layout>
 </aura:application>
